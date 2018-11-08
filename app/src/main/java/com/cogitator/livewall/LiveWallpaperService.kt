@@ -59,7 +59,7 @@ class LiveWallpaperService : WallpaperService() {
     }
 
     fun setSprites() {
-        mBoidSpriteSheet = BitmapFactory.decodeResource(resources, R.drawable.bats)
+        mBoidSpriteSheet = BitmapFactory.decodeResource(resources, R.drawable.boids)
         mSpriteWidth = 100
         mSpriteHeight = 50
         mSpriteRow = mBoidSpriteSheet!!.height / mSpriteHeight
@@ -194,7 +194,7 @@ class LiveWallpaperService : WallpaperService() {
                                 bb[i].mPosition.x.toInt() + mSpriteWidth,
                                 bb[i].mPosition.y.toInt() + mSpriteHeight
                             )
-                            c!!.drawBitmap(mBoidSpriteSheet, src, dest, null)
+                            c.drawBitmap(mBoidSpriteSheet, src, dest, null)
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 <wallpaper
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:thumbnail="@drawable/bats"
+        android:thumbnail="@drawable/boids"
         android:description="@string/description"
         android:settingsActivity="package com.cogitator.livewall.MainActivity"
 />
